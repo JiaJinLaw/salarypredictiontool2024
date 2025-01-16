@@ -52,7 +52,7 @@ st.markdown(
     }}
     /* Input and dropdown text color */
     .stTextInput input, .stSelectbox select, .stButton, .stSlider input {{
-        color: white;  /* Set text color in inputs to white */
+        color: black;  /* Set text color in inputs to black */
     }}
     /* Placeholder text for inputs */
     .stTextInput input::placeholder {{
