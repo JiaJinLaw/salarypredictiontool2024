@@ -6,8 +6,8 @@ import base64
 from pathlib import Path
 
 # Load the trained model and TF-IDF vectorizer
-model = joblib.load(r'C:\Users\jiaji\OneDrive - Universiti Malaya\Share document with PC\4. SEM 1 - 2024\P2\best_rf_model.pkl')
-tfidf_vectorizer = joblib.load(r'C:\Users\jiaji\OneDrive - Universiti Malaya\Share document with PC\4. SEM 1 - 2024\P2\job_title_tfidf_vectorizer.pkl')
+model = joblib.load('best_rf_model.pkl')
+tfidf_vectorizer = joblib.load('job_title_tfidf_vectorizer.pkl')
 
 # Function to load image as base64
 def image_to_base64(image_path):
@@ -16,7 +16,7 @@ def image_to_base64(image_path):
     return encoded_string
 
 # Load image in base64
-image_path = 'C:/Users/jiaji/OneDrive - Universiti Malaya/Share document with PC/4. SEM 1 - 2024/P2/dataproduct background.jpg'
+image_path = 'dataproduct background.jpg'
 image_base64 = image_to_base64(image_path)
 
 st.markdown(
